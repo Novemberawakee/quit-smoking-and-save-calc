@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quit Smoking And Save Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div id="all">
+        <div id="container">
+            <h1>How much money will you save if you quit smoking?</h1>
+            <form>
+                <div class="getInformation">
+                    <span>cigarettes smoked per day
+                        <input id="cigarettesPerDay" type="text" placeholder="cigarettes/day">
+                    </span>
+                </div>
+                <div class="getInformation">
+                    <span>pack size
+                        <input id="packSize" type="text" placeholder="cigarettes in pack">
+                    </span>
+                </div>
+                <div class="getInformation">
+                    <span>pack cost
+                        <input id="packCost" type="text" placeholder="pack cost"> $
+                    </span>
+                </div>
+                <button id="btn">CALCULATE</button>
+            </form>
+            <div class="result">
+                <span>You smoke</span>
+                <span id="totalPacks"></span>
+                <span> packs per year</span>
+            </div>
+            <div class="result">
+                <span>You will save</span>
+                <span id="totalMoney"></span>
+                <span> $  per year if you quit smoking</span>
+            </div>
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
